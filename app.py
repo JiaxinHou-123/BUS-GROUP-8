@@ -51,7 +51,7 @@ def chat():
     return render_template('chat.html', chat_history=[])
 
 
-@app.route('/feedback', methods=['POST'])
+@app.route('/feedback', methods=['POST', 'GET'])
 def feedback():
     feedback_text = request.form.get('feedback_text')
     if feedback_text:
