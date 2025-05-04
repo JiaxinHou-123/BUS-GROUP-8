@@ -1,6 +1,8 @@
 #Conduct positive and negative cases for cost-of-living section,function of budget suggestions
 
 def test_suggest_positive(client):
+    
+    # The mock real input parameters
     response = client.post('/suggest', data={
         'budget_expression': '500 + 100',
         'time_unit': 'weekly',
@@ -16,9 +18,11 @@ def test_suggest_positive(client):
 
 
 def test_suggest_negative(client):
+
+    # The negative case for buddget_expression error input
     response = client.post('/suggest', data={
         'budget_expression': '500 + ABC~!',
-        'time_unit': 'weekly',
+        'time_unit': 'monthly',
     }, follow_redirects=True)
 
     assert response.status_code == 200
