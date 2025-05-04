@@ -6,6 +6,7 @@ from flask import Flask, render_template, request, jsonify, url_for
 import torch.nn as nn
 app = Flask(__name__)
 
+app.config['UPLOAD_FOLDER'] = './static/uploads/'
 
 # @article{zeng2022glm,
 #   title={Glm-130b: An open bilingual pre-trained model},
