@@ -1,4 +1,5 @@
 #Conduct positive and negative cases for cost-of-living section,function of budget suggestions
+
 def test_suggest_positive(client):
     response = client.post('/suggest', data={
         'budget_expression': '500 + 100',
@@ -13,9 +14,10 @@ def test_suggest_positive(client):
     assert b"Here is your Budget plan suggestion!" in response.data
     assert b"Accommodation" in response.data or b"Food" in response.data
 
+
 def test_suggest_negative(client):
     response = client.post('/suggest', data={
-        'budget_expression': '500 + ABC',
+        'budget_expression': '500 + ABC~!',
         'time_unit': 'weekly',
     }, follow_redirects=True)
 
