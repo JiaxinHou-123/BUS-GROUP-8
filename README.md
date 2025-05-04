@@ -38,6 +38,12 @@ cd BUS-GROUP-8
 
 ```
 pip install -r requirements.txt
+
+```
+Then according to versions,please add package flask-wtf
+
+```
+pip install flask-wtf
 ```
 
 To ensure the correct version of torch, please install it strictly in accordance with the instructions in the  [official documentation](https://pytorch.org/get-started/locally/) .
