@@ -38,8 +38,8 @@ cd BUS-GROUP-8
 
 ```
 pip install -r requirements.txt
-
 ```
+
 Then according to versions,please add package flask-wtf
 
 ```
@@ -75,7 +75,11 @@ pytest
 
 ### Environmental configuration
 
+<<<<<<< HEAD
+This project is developed **using Python, with the Flask framework constructing the backend architecture, and integrates PyTorch and ModelScope libraries to build core components of the AI dialogue system**. At the model level, we adopted the open-source [ChatGLM3-6b](https://github.com/THUDM/ChatGLM3) large language model (6-billion-parameter scale) from ZhipuAI as the foundational architecture. While model fine-tuning was omitted due to computational resource constraints and insufficient training data, the system maintains basic conversational functionality for standard interaction use cases.
+=======
 This project is developed **using Python3.8.10, with the Flask framework constructing the backend architecture, and integrates PyTorch and ModelScope libraries to build core components of the AI dialogue system**. At the model level, we adopted the open-source [ChatGLM3-6b](https://github.com/THUDM/ChatGLM3) large language model (6-billion-parameter scale) from ZhipuAI as the foundational architecture. While model fine-tuning was omitted due to computational resource constraints and insufficient training data, the system maintains basic conversational functionality for standard interaction use cases.
+>>>>>>> b5e2b41a729a47d1cbb60105a5bdfd3925b4440f
 
 For specific configuration requirements, please refer to the requirements.txt file
 
@@ -124,5 +128,5 @@ The Cost of Living Support Module delivers the following key features:
 | Xi Feng- 2794920   | 21%             | ① Assisted in the development of app.py, including data querying, comment annotation, and code review.<br/>② Completed the development of the Accessibility Support frontend interface.<br/>③ Assisted with project integration.<br/>④ Assisted in the documentation of the Readme. | The writing of index.html                            | Xi Feng    |
 | Zijun He- 2749467  | 21%             | ① Assisted in the development of app.py, including runtime checks and style consistency verification.<br/>② Completed the development of the Cost of Living Support frontend interface.<br/>③ Assisted with project integration.<br/>④ Contributed to the documentation of the Readme. | The writing of base.html                             | Zijun He   |
 | Xiaoya Dou-2853070 | 18.5%           | ① Optimized the budgeting functionality for Cost of Living Support.<br/>② Implemented a recommendation feature for budget allocation based on students" current budgets (while retaining the calculator functionality).<br/>③ Enhanced handling of blank form submissions by displaying prompt messages.<br/>④ Added upload capability for image, text, and video resources. | The writing of "test"                                | Xiaoya Dou |
-| Yiqi Yang- 2869896 | 18.5%           | ① Integrated database implementation and developed user login/logout, and registration functionalities.<br/>② Established role-based partitioning to enable differentiated interface views for distinct user roles.<br/>③ Enhanced the Accessibility Support module by implementing a feedback mechanism and integrating search box with resource display.<br/>④ Enhanced file management capabilities with viewing and deletion options for uploaded documents.<br/>⑤ Implemented an accommodation-focused Q&A feature within Accessibility Support. | The writing of "test"                                | Yiqi Yang  |
+| Yiqi Yang- 2869896 | 18.5%           | ① Integrated database implementation and developed user login/logout, and registration functionalities. And create databse classes in the system.<br/>② Established role-based partitioning to enable differentiated interface views for distinct user roles.<br/>③ Enhanced the Accessibility Support module by implementing a feedback mechanism and integrating search box with resource display.<br/>④ Enhanced file management capabilities with deletion option for uploaded documents.<br/>⑤ Implemented an accommodation-focused Q&A feature within Accessibility Support. | The writing of "test" and integrate codes                               | Yiqi Yang  |
 
