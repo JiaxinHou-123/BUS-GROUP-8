@@ -75,11 +75,8 @@ pytest
 
 ### Environmental configuration
 
-<<<<<<< HEAD
-This project is developed **using Python, with the Flask framework constructing the backend architecture, and integrates PyTorch and ModelScope libraries to build core components of the AI dialogue system**. At the model level, we adopted the open-source [ChatGLM3-6b](https://github.com/THUDM/ChatGLM3) large language model (6-billion-parameter scale) from ZhipuAI as the foundational architecture. While model fine-tuning was omitted due to computational resource constraints and insufficient training data, the system maintains basic conversational functionality for standard interaction use cases.
-=======
 This project is developed **using Python3.8.10, with the Flask framework constructing the backend architecture, and integrates PyTorch and ModelScope libraries to build core components of the AI dialogue system**. At the model level, we adopted the open-source [ChatGLM3-6b](https://github.com/THUDM/ChatGLM3) large language model (6-billion-parameter scale) from ZhipuAI as the foundational architecture. While model fine-tuning was omitted due to computational resource constraints and insufficient training data, the system maintains basic conversational functionality for standard interaction use cases.
->>>>>>> b5e2b41a729a47d1cbb60105a5bdfd3925b4440f
+
 
 For specific configuration requirements, please refer to the requirements.txt file
 
