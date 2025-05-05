@@ -30,7 +30,7 @@ First, you need to download this repository:
 git clone https://github.com/JiaxinHou-123/BUS-GROUP-8.git
 ```
 
-Then install the dependencies using pip，it is recommended to navigate to the project directory before running the command.":
+Then install the dependencies using pip，it is recommended to navigate to the project directory before running the command.
 
 ```
 cd BUS-GROUP-8
