@@ -53,10 +53,10 @@
         {% endif %}
     </div>
 
-    <!-- Student Question Section -->
+    <!-- Student submit their questions -->
       {% if current_user.role == 'Student' %}
 <div class="card shadow-sm mb-5 p-4">
-    <h3 class="text-center text-success mb-4">💬 Submit Your Questions</h3>
+    <h3 class="text-center text-success mb-4">Submit Your Question</h3>
     <form method="POST" action="{{ url_for('other_functions')}}">
         <textarea name="question_text" class="form-control mb-3" rows="4" placeholder="If you have questions, please tell us." required></textarea>
         <button type="submit" class="btn btn-success w-100">Submit Your Question</button>
@@ -64,10 +64,10 @@
 </div>
 {% endif %}
 
- <!-- Staffs and admin process feedback -->
-    {% if current_user.role in ['Staff', 'Admin'] and questions %}
+ <!-- Admin process qustions -->
+    {% if current_user.role == 'Admin' and questions %}
 <div class="card shadow-sm mb-5 p-4">
-    <h3 class="text-center text-primary mb-4">📋 Student Accommodation Question Records</h3>
+    <h3 class="text-center text-primary mb-4"> Student Question Records</h3>
     {% for question in questions %}
         <div class="border rounded p-3 mb-3">
             <p><strong>{{ question.user.username }} ({{ question.timestamp.strftime('%Y-%m-%d %H:%M') }})</strong></p>
