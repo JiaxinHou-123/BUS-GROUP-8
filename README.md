@@ -66,6 +66,7 @@ Due to considerations of computational resources, we built the project to run on
 ```
 python app.py --host 0.0.0.0 --port 8080
 ```
+In the database configuration, there is a student user with the username **tom** and password **tom.pw**, and an administrator with the username **amy** and password **amy.pw**. You can log in the system directly.
 
 The script contains test code. Test cases are in the folder of tests. Simply enter `pytest` in the terminal to run the test cases.
 
