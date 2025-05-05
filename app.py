@@ -520,7 +520,7 @@ def other_functions():
     if current_user.role in ['Staff', 'Admin']:
         questions = Question.query.order_by(Question.timestamp.desc()).all()
 
-    return render_template("other_functions.html")
+    return render_template("other_functions.html",questions=questions)
 
 
 # Route to handle dormitory search
