@@ -606,8 +606,6 @@ def register():
         db.session.commit()
         flash("Welcome to the system. You have registered the new account","success")
         return redirect(url_for('login'))
-    else:
-        flash("Fail to register the new account!","warning")
         
     return render_template('generic_form.html', title='Register', form=form)
 
