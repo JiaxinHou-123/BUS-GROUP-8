@@ -191,9 +191,8 @@ def get_AIModel():
     base_dir = os.path.dirname(os.path.abspath(__file__))
     model_dir = os.path.join(base_dir, "models", "ZhipuAI", "chatglm3-6b")
 
-    tokenizer = AutoTokenizer.from_pretrained(model_dir, trust_remote_code=True, local_files_only=True)
-    model = AutoModel.from_pretrained(model_dir, device_map="auto", offload_folder="offload_weights",
-                                      trust_remote_code=True, local_files_only=True).half()
+    tokenizer = AutoTokenizer.from_pretrained(model_dir, trust_remote_code=True)
+    model = AutoModel.from_pretrained(model_dir, device_map="auto", trust_remote_code=True).half()
     return tokenizer, model.eval()
 
 #AI chatbot
